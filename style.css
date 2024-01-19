@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    background: linear-gradient(45deg,red,blue);
+    color: white;
+}
+
+header{
+    border: 1px solid #ccc;
+    height: 100vh;
+}
+
+nav h1{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    border-bottom: 1px solid #ccc; 
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover{
+    background-color: #ccc;
+    color: blue;
+    transition: 0.3s ease-in-out;
+}
+
+main{
+    padding: 60px;
+    max-width: 1200px;
+}
+
+section{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section h2{
+    font-size: 3rem;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+section p{
+    margin-bottom: 1rem;
+}
+
+section article{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section article ul{
+    margin-left: 30px;
+}
+
+section article ul li{
+    margin-bottom: 1rem;
+}
+
+@media (max-width:768px){
+
+    body{
+        flex-direction: column;
+    }
+
+    header{
+        height: 200px;
+        overflow: hidden;
+        overflow-y: scroll;
+        width: auto;
+       
+    }
+
+    nav h1{
+        font-size: 2.2rem;
+        font-weight: 500;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        
+    }
+
+    nav ul li{
+        font-size: 1.5rem;
+        
+    }
+
+    main{
+        width: 100%;
+        padding: 20px;
+    }
+   section h2{
+        font-size:32px ;
+        display: inline;
+        
+    }
+
+    section {
+         
+        width: 100%;
+    }
+
+    section article{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
